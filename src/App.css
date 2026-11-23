@@ -1,0 +1,33 @@
+.app-shell{min-height:100vh;max-width:960px;margin:0 auto;padding:0 28px;display:flex;flex-direction:column}
+.topbar{min-height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e8e7e3}
+.brand{display:inline-flex;align-items:center;gap:10px;color:#1d2a21;font-weight:750;letter-spacing:-.04em;text-decoration:none;font-size:21px}
+.brand-mark{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;color:white;background:#28734e;font-size:18px}
+.account{display:flex;align-items:center;gap:16px;color:#6a706b;font-size:13px}
+.signout-button,.text-button{color:#28734e;border:0;background:transparent;cursor:pointer;font:inherit;font-weight:650}
+.todo-main{width:min(100%,680px);margin:76px auto 64px;flex:1}
+.todo-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}
+.eyebrow{margin:0 0 10px;color:#28734e;font-size:11px;font-weight:750;letter-spacing:.14em}
+.todo-heading h1,.auth-card h1{margin:0;color:#1d2a21;font-size:clamp(32px,6vw,48px);letter-spacing:-.055em;line-height:1.05}
+.muted{color:#858b85;font-size:14px;margin:9px 0 0}
+.create-form{display:flex;gap:10px;margin-bottom:30px}
+.create-form input,.auth-form input,.edit-form input{min-width:0;width:100%;border:1px solid #dedfd9;border-radius:12px;background:white;padding:13px 15px;color:#202721;font:inherit;outline:none}
+.create-form input:focus,.auth-form input:focus,.edit-form input:focus{border-color:#52936f;box-shadow:0 0 0 3px #e5f1e9}
+.primary-button{flex:0 0 auto;border:0;border-radius:11px;padding:0 19px;background:#28734e;color:white;font:inherit;font-weight:700;cursor:pointer}
+.primary-button:disabled{cursor:not-allowed;opacity:.5}
+.task-section{border:1px solid #e7e8e2;border-radius:16px;background:white;box-shadow:0 12px 35px #2a352b0a;overflow:hidden}
+.section-heading{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:20px 22px;border-bottom:1px solid #ecece7}
+.section-heading h2{margin:0;font-size:17px;color:#28332b}.section-heading .muted{font-size:12px;margin-top:3px}
+.filter-group{display:flex;gap:3px;padding:4px;background:#f4f5f1;border-radius:9px}
+.filter-button{border:0;border-radius:7px;padding:6px 10px;background:transparent;color:#737a73;font:inherit;font-size:12px;cursor:pointer}
+.filter-button.selected{background:white;color:#28734e;box-shadow:0 1px 4px #141e141a;font-weight:700}
+.task-list{list-style:none;margin:0;padding:0}.task-row{min-height:68px;padding:12px 22px;display:flex;align-items:center;gap:13px;border-bottom:1px solid #f0f0ec}.task-row:last-child{border-bottom:0}
+.task-checkbox{width:17px;height:17px;accent-color:#28734e;cursor:pointer}.task-copy{flex:1;display:flex;flex-direction:column;gap:3px;color:#343c35;font-size:14px}.task-copy time{color:#a0a49e;font-size:11px}
+.completed .task-copy span{color:#a0a49e;text-decoration:line-through}.task-actions{display:flex;gap:6px}
+.small-button{border:1px solid #dfe4dd;border-radius:7px;background:white;padding:6px 9px;color:#3d684c;font:inherit;font-size:12px;cursor:pointer}.small-button.danger{color:#a34646;border-color:#f0dada}
+.edit-form{flex:1;display:flex;gap:7px}.edit-form input{padding:8px 10px;font-size:13px}
+.empty-state,.loading-card{padding:32px 22px;color:#929891;text-align:center;font-size:14px}
+.notice{border-radius:9px;padding:10px 12px;margin:14px 0;font-size:13px}.notice.error{color:#9a3838;background:#fff0ef}.notice.success{color:#286a44;background:#eaf6ed}
+.auth-card{width:min(100%,420px);margin:auto;border:1px solid #e7e8e2;border-radius:18px;background:white;padding:32px;box-shadow:0 16px 45px #2a352b0f}.auth-card h1{font-size:34px}
+.auth-form{display:grid;gap:16px;margin-top:24px}.auth-form label{display:grid;gap:7px;color:#586159;font-size:13px;font-weight:650}.auth-form .primary-button{min-height:46px}.auth-card .text-button{margin-top:18px;padding:0}
+.app-footer{padding:22px 0;border-top:1px solid #e8e7e3;color:#969b95;text-align:center;font-size:12px}
+@media(max-width:600px){.app-shell{padding:0 16px}.todo-main{margin:45px auto}.topbar{min-height:66px}.account{gap:8px}.account span{max-width:130px;overflow:hidden;text-overflow:ellipsis}.create-form{flex-direction:column}.create-form .primary-button{min-height:45px}.section-heading{align-items:flex-start;flex-direction:column}.task-row{padding:12px;gap:8px}.task-actions{flex-direction:column}.edit-form{flex-wrap:wrap}.auth-card{padding:24px}}
